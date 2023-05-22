@@ -48,12 +48,13 @@ public class Parent {
         wait.until(ExpectedConditions.textToBe(element, str));
     }
 
+    // elemente scroll yapmak için eklendi
     public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) BaseDriver.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
 
-
+    // esc tuşuna basmak için eklendi
     public void pressEsc() {
         Robot robot;
         try {

@@ -1,4 +1,4 @@
-Feature: Trendyol Web Test
+Feature: Trendyol Login Functionality
 
   Scenario: User should login to Trendyol web application successfully
     Given Navigate to Trendyol
