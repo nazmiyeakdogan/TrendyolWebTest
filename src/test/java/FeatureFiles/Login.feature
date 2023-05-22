@@ -5,3 +5,6 @@ Feature: Trendyol Web Test
     When Enter user information
     And Click login
     Then Verify successful login
+
+
+
