@@ -6,7 +6,7 @@ Feature: Trendyol Web Test
     And Click login
     Then Verify successful login
 
-    Scenario: User select product and complete shopping
+    Scenario:User select product and complete shopping
       When Search for product
       And Apply filter for product
       And Click on the product and add to cart
