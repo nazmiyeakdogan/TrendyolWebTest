@@ -1,7 +1,7 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Pages.LoginElements;
-import Utilities.BaseDriver;
+import pages.LoginElements;
+import utilities.BaseDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

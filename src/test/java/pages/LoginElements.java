@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Utilities.BaseDriver;
+import utilities.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

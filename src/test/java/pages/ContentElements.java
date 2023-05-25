@@ -1,22 +1,23 @@
-package Pages;
+package pages;
 
-import Utilities.BaseDriver;
+import utilities.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ShoppingElements extends Parent {
+public class ContentElements extends Parent {
 
-    public ShoppingElements() {
-        PageFactory.initElements(BaseDriver.getDriver(), this);
+    public ContentElements() {
+        PageFactory.initElements(BaseDriver.getDriver(),this);
     }
-
-    @FindBy(className = "V8wbcUhU")
+    @FindBy(xpath = "//input[@data-testid='suggestion']")
     public WebElement searchInput;
-    @FindBy(className = "cyrzo7gC")
+    @FindBy(xpath = "//i[@data-testid='search-icon']")
     public WebElement searchButton;
     @FindBy(xpath = "//div[text()='Apple']")
     public WebElement brand;
+    @FindBy(css = "[class='overlay']")
+    public WebElement blank;
     @FindBy(xpath = "//div[text()='Ram (Sistem Belleği)']")
     public WebElement ramButton;
     @FindBy(xpath = "//div[text()='16 GB']")
@@ -27,19 +28,17 @@ public class ShoppingElements extends Parent {
     public WebElement basketButton;
     @FindBy(xpath = "(//p[text()='Sepetim'])[1]")
     public WebElement basket;
-    @FindBy(css = "[class='i-trash']:nth-child(1)")
+    @FindBy(css = "[class='i-trash']:nth-child(1)")  //  i[class='i-trash']
     public WebElement deleteProduct;
     @FindBy(xpath = "(//i[@class='i-heart'])[1]")
     public WebElement favorite;
     @FindBy(xpath = "//p[text()='Favorilerim']")
     public WebElement myFavorite;
-
     @FindBy(xpath = "//span[text()='Sepete Ekle']")
     public WebElement addBasket;
-
     @FindBy(xpath = "(//span[text()='Sepeti Onayla'])[1]")
     public WebElement confirmCart;
-    @FindBy(className = "ty-primary-btn ty-btn-large")
+    @FindBy(xpath = "//button[text()='Kaydet ve Devam Et']")
     public WebElement save;
     @FindBy(id = "card-number")
     public WebElement cartNumber;
@@ -65,11 +64,8 @@ public class ShoppingElements extends Parent {
             case "save" : return save;
             case "cartNumber" : return cartNumber;
             case "month" : return month;
-
         }
-
         return null;
-
     }
 
 }

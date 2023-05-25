@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Utilities.BaseDriver;
+import utilities.BaseDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
